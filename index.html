@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Shaina — From Affan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      background: #000;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+    .page {
+      display: none;
+      height: 100%;
+      width: 100%;
+      padding: 2rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .active { display: flex; }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #ff66b2;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #ffccff;
+      margin-bottom: 1rem;
+    }
+    .box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #ff66b2;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 700px;
+      margin: 1rem auto;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-height: 1000px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+  scrollbar-color: #ff66b2 #1a1a1a; /* thumb | track */
+}
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+.box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.box::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 8px;
+}
+
+.box::-webkit-scrollbar-thumb {
+  background-color: #ff66b2;
+  border-radius: 8px;
+  border: 2px solid #1a1a1a;
+    }
+    button {
+      padding: 12px 28px;
+      margin: 1rem 0.5rem;
+      font-size: 1rem;
+      background: #ff4081;
+      border: none;
+      border-radius: 25px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #e91e63;
+    }
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+    }
+    footer {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="fireworksCanvas"></canvas>
+
+<div id="homePage" class="page active">
+  <h1>Happy Birthday Shaina 🎂</h1>
+  <p>From Affan</p>
+  <button onclick="goTo('messagePage')">Next</button>
+  <footer>Designed with love by Affan </footer>
+</div>
+
+<div id="messagePage" class="page">
+  <h2>MESSAGE</h2>
+  <div class="box">
+    Happiest Birthday Shaina - 10th AUGUST 2022<br>
+    Happiest Birthday Shaina - 10th AUGUST 2023<br>
+    Happiest Birthday Shaina - 10th AUGUST 2024<br>
+    Happiest Birthday Shaina - TODAY<br><br>
+    I wasn't with you on your past three birthdays, but I've always remembered you in my prayers.<br><br>
+    Allah's my witness, you were always with me, even when I wasn't there.<br>
+    And with Allah in my heart, I say "I'll always be there for you."
+  </div>
+  <button onclick="goTo('shayariPage')">Next</button>
+</div>
+
+<div id="shayariPage" class="page">
+  <h2>"YOU"</h2>
+  <div class="box">
+    She walks like an angel, with a heart so wide,<br>
+    Where every broken thing finds a place to hide.<br>
+    A whisper of calm she is in a scariest storm,<br>
+    While the world stays cold, her soul stays warm.<br><br>
+    Her kindness is not only in words she says,<br>
+    It's seen in her action and lives in her ways.<br>
+    She sees the hurt that others cannot,<br>
+    And heals the world in ways others do not.<br><br>
+    She holds without a visible bind,<br>
+    Loves with a depth the world struggles to find.<br>
+    Her presence feels like acceptence of prayer, her smile a light,<br>
+    That turns even the darkest hour bright. <br><br>
+    She's not just kind, she herself is kindness of the whole world combine,<br>
+    A symphony of mercy in her soul so divine.<br>
+    That if ever you feel you're falling apart,<br>
+    She'll gather your pieces and hold your heart.<br><br>
+    ~ Affan
+  </div>
+  <button onclick="goTo('duaPage')">Next</button>
+</div>
+
+<div id="duaPage" class="page">
+  <h2>🤲🏻</h2>
+  <div class="box">
+    Allah tumhari zindagi noor se bhardein.<br><br>
+    Tumhara har din khushi ka sabab ban jaaye,<br>
+    Tumhara har khwaab asal hojaaye,<br>
+    Tumhare ye hoonth hamesha muskuraaye.<br><br>
+    Tum jahan bhi jao woh jagah roshan hojaaye,<br>
+    Tumhara dil kabhi udaas na ho aur hamesha khushiyon se goon gunaaye,<br>
+    Har dard tumse durr rahe aur sukoon tumhara hamraahi hojaaye.<br><br>
+    Tumhari ye zindagi aasaan aur haseen ban jaaye,<br>
+    Tumhari taqdeer ko sirf urooj ke maayne pata ho aur zawaal tumhare aas paas bhi naa aaye,<br>
+    Tumhari raahon mein sirf roshni hi roshni ho kaante bhi tumhe dekh phool ban jaaye.<br><br>
+    Tumhari choti choti pyaari pyaari aankhein hamehsa chamakti rahe,<br>
+    Inme aansu sirf khushiyon ke aaye.<br><br>
+    Mere naseeb ka accha kat kar tumhare naseeb mein likh jaaye,<br>
+    Khuda karein meri umr bhi tumhe lag jaaye.<br><br>
+    AMEEN, SUMMA AMEEN.<br><br>
+    ~ Affan
+  </div>
+  <button onclick="goTo('homePage')">Back to Start</button>
+</div>
+
+<script>
+  function goTo(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(pageId).classList.add('active');
+  }
+
+  const canvas = document.getElementById('fireworksCanvas');
+  const ctx = canvas.getContext('2d');
+  let particles = [];
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resizeCanvas);
+  resizeCanvas();
+
+  function randomColor() {
+    const colors = ['#ff4081', '#ffcc00', '#66ffcc', '#ff0066', '#00ffff'];
+    return colors[Math.floor(Math.random() * colors.length)];
+  }
+
+  function createFirework(x, y) {
+    for (let i = 0; i < 50; i++) {
+      const angle = Math.random() * 2 * Math.PI;
+      const speed = Math.random() * 4 + 1;
+      particles.push({
+        x,
+        y,
+        radius: Math.random() * 2 + 1,
+        color: randomColor(),
+        speedX: Math.cos(angle) * speed,
+        speedY: Math.sin(angle) * speed,
+        alpha: 1
+      });
+    }
+  }
+
+  function drawParticles() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    const nextParticles = [];
+
+    for (let p of particles) {
+      ctx.beginPath();
+      ctx.globalAlpha = p.alpha;
+      ctx.fillStyle = p.color;
+      ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI);
+      ctx.fill();
+
+      p.x += p.speedX;
+      p.y += p.speedY;
+      p.alpha -= 0.015;
+
+      if (p.alpha > 0) nextParticles.push(p);
+    }
+
+    ctx.globalAlpha = 1;
+    particles = nextParticles;
+  }
+
+  function animate() {
+    drawParticles();
+    requestAnimationFrame(animate);
+  }
+
+  setInterval(() => {
+    const x = Math.random() * canvas.width;
+    const y = Math.random() * canvas.height / 2;
+    createFirework(x, y);
+  }, 500);
+
+  animate();
+</script>
+
+</body>
+</html>
